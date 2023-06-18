@@ -1,0 +1,30 @@
+--------------------(InputLayer	input_3)--------------------
+batch_input_shape	(None, 20000, 1)
+sparse	False
+ragged	False
+--------------------(Flatten	flatten_3)--------------------
+data_format	channels_last
+--------------------(Dense	dense_14)--------------------
+units	1024
+activation	relu
+use_bias	True
+kernel_initializer	{'class_name': 'GlorotUniform', 'config': {'seed': None}}
+bias_initializer	{'class_name': 'Zeros', 'config': {}}
+--------------------(Dense	dense_15)--------------------
+units	512
+activation	relu
+use_bias	True
+kernel_initializer	{'class_name': 'GlorotUniform', 'config': {'seed': None}}
+bias_initializer	{'class_name': 'Zeros', 'config': {}}
+--------------------(Dense	dense_16)--------------------
+units	256
+activation	relu
+use_bias	True
+kernel_initializer	{'class_name': 'GlorotUniform', 'config': {'seed': None}}
+bias_initializer	{'class_name': 'Zeros', 'config': {}}
+--------------------(Dense	dense_17)--------------------
+units	2
+activation	linear
+use_bias	True
+kernel_initializer	{'class_name': 'GlorotUniform', 'config': {'seed': None}}
+bias_initializer	{'class_name': 'Zeros', 'config': {}}
