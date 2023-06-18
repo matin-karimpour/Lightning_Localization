@@ -1,0 +1,49 @@
+--------------------(InputLayer	input_2)--------------------
+batch_input_shape	(None, 20000, 1)
+sparse	False
+ragged	False
+--------------------(Conv1D	conv1d_1)--------------------
+filters	128
+kernel_size	(20,)
+strides	(1,)
+padding	valid
+data_format	channels_last
+dilation_rate	(1,)
+groups	1
+activation	relu
+use_bias	True
+kernel_initializer	{'class_name': 'GlorotUniform', 'config': {'seed': None}}
+bias_initializer	{'class_name': 'Zeros', 'config': {}}
+--------------------(AveragePooling1D	average_pooling1d_1)--------------------
+strides	(30,)
+pool_size	(30,)
+padding	valid
+data_format	channels_last
+--------------------(Dropout	dropout_1)--------------------
+rate	0.1
+--------------------(Flatten	flatten)--------------------
+data_format	channels_last
+--------------------(Dense	dense)--------------------
+units	64
+activation	relu
+use_bias	True
+kernel_initializer	{'class_name': 'GlorotUniform', 'config': {'seed': None}}
+bias_initializer	{'class_name': 'Zeros', 'config': {}}
+--------------------(Dense	dense_1)--------------------
+units	512
+activation	relu
+use_bias	True
+kernel_initializer	{'class_name': 'GlorotUniform', 'config': {'seed': None}}
+bias_initializer	{'class_name': 'Zeros', 'config': {}}
+--------------------(Dense	dense_2)--------------------
+units	512
+activation	relu
+use_bias	True
+kernel_initializer	{'class_name': 'GlorotUniform', 'config': {'seed': None}}
+bias_initializer	{'class_name': 'Zeros', 'config': {}}
+--------------------(Dense	dense_3)--------------------
+units	2
+activation	linear
+use_bias	True
+kernel_initializer	{'class_name': 'GlorotUniform', 'config': {'seed': None}}
+bias_initializer	{'class_name': 'Zeros', 'config': {}}
