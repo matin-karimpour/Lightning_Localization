@@ -18,14 +18,5 @@ The second part of this model is localization DNN. Fig 2 (b) refers to this part
 ![AE](https://github.com/matin-karimpour/Lightning_Localization/blob/main/figures/AE.png)
 ![DNN](https://github.com/matin-karimpour/Lightning_Localization/blob/main/figures/DNN.png)
 *Fig 2 Architecture of AE + DNN model. (a) is AE architecture and (b) is DNN for localization.*
-## Results
-Fig. 3(a) and (b) are the scatter plots of the target versus output values where the blue dots correspond to the 10000 observations in the database. The best-fit lines are calculated using the least-squares regression method. The very high values of the coefficient of determination (R ) indicate that a high proportion of the variance in the data is explained by the fitting line. the root mean squared errors (RMSE) are 219.49 and 307.29 m for the x and y coordinates, respectively.
 
-![Estimated vs tragets](https://github.com/matin-karimpour/Lightning_Localization/blob/main/figures/Estimated_vs_tragets.png)
-*Fig 3 Model evaluation results for (a) the x-coordinate and (b) the y-coordinate,*
-
-![Estimated vs tragets locations](https://github.com/matin-karimpour/Lightning_Localization/blob/main/figures/Estimated_vs_tragets_locations.jpg)
-
-*Fig 4 Scatter plot of the target (red dots) versus estimated (blue dots) 2-D geolocations for the
-100 random sample of test dataset points using the AE + DNN model.*
 
